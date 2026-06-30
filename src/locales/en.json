@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "full-stack AI & cloud engineer",
+    "headlineBefore": "Building ",
+    "headlineAccent": "intelligent",
+    "headlineAfter": " systems, end to end.",
+    "subtitle": "I design and ship agentic AI systems, RAG pipelines and cloud-integrated backends — from data ingestion to deployment.",
+    "ctaPrimary": "View my work",
+    "ctaContact": "$ contact",
+    "status": "Available for opportunities · Based in Penang, Malaysia · EN / 中文",
+    "photoAlt": "Portrait of Chuah Wen Han"
+  },
+  "about": {
+    "title": "About",
+    "body": "I'm Chuah Wen Han, a Computer Engineering (Artificial Intelligence) graduate from UCSI University with a final CGPA of 3.90 and Dean's List recognition in every eligible semester. I'm currently a Graduate Talent on Intel's ECG AI & Cloud Remote Solutions Engineering team, where I build enterprise-scale agentic AI systems, RAG pipelines and cloud-integrated backends. I work end to end — frontend, backend, databases and deployment — and enjoy turning complex engineering problems into reliable, production-grade AI services."
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "role": "Graduate Talent — ECG AI & Cloud Remote Solution Engineer",
+        "company": "Intel Microelectronics (M) Sdn. Bhd.",
+        "period": "Oct 2025 — Present",
+        "description": "Full-stack AI engineer delivering cloud-based automation and enterprise AI services. Built end-to-end AI pipelines (data ingestion, retrieval, model integration and APIs) and deployed and scaled services on Azure, handling backend engineering, SQL/NoSQL database design, system integration and Git-based CI/CD."
+      },
+      {
+        "role": "Automation Development Engineering (AI) Intern",
+        "company": "Western Digital (SanDisk Storage Malaysia)",
+        "period": "Sep 2024 — Dec 2024",
+        "description": "Developed an AI-powered image-to-text model using OpenCV, OCR and deep learning. Designed and optimized shape, line and text detection to automate flowchart analysis, integrated it with an LLM for AI-driven query responses, and deployed the system with Docker and Flask."
+      },
+      {
+        "role": "Software (AI) Engineer Intern",
+        "company": "Micro Modular System Sdn. Bhd.",
+        "period": "Sep 2023 — Dec 2023",
+        "description": "Built deep-learning models for machine-vision systems using PyTorch and YOLOv8. Implemented instance segmentation for product defect inspection and size measurement, covering research, model architecture design, training and performance evaluation."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      { "name": "Languages", "items": ["Python", "Java", "C++", "SQL", "HTML", "Assembly"] },
+      {
+        "name": "AI / ML",
+        "items": ["PyTorch", "YOLOv8", "Computer Vision", "Deep Learning", "RAG", "LLM Orchestration"]
+      },
+      {
+        "name": "Backend & Cloud",
+        "items": ["FastAPI", "Azure", "Docker", "PostgreSQL / pgvector", "MongoDB", "Redis", "MCP"]
+      },
+      { "name": "Tools", "items": ["Git", "CI/CD", "MATLAB", "Arduino", "AutoCAD"] }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "EzBot — Enterprise Multi-Agent Knowledge Platform",
+        "description": "An enterprise-scale Agentic RAG platform that routes requests to domain-specific AI agents (workspace, general Q&A, and debug analysis such as BSOD and IFWI). Built with FastAPI and PostgreSQL + pgvector for hybrid vector search over FAQ APIs, Confluence and SharePoint, with an Azure-hosted Claude LLM using tool-calling, orchestrator-based routing, and JWT/OAuth2-secured endpoints."
+      },
+      {
+        "name": "BSOD Copilot — AI Windows Crash Dump Analyzer",
+        "description": "An MCP server (FastMCP + FastAPI) that wraps WinDbg/kd.exe as LLM-callable tools to automatically analyze Windows memory dumps. Encodes a kernel-debugging expert's knowledge into 19+ bugcheck-specific guides (0xA, 0x50, 0x133, 0x1CA…) covering root-cause patterns, IOMMU/DMA corruption, power-state failures and hardware faults."
+      },
+      {
+        "name": "AgenticBot — Autonomous Validation Assistant",
+        "description": "A ReAct-style autonomous agent that operates Linux validation environments via natural language. Features secure SSH command execution with intent classification, safety validation and human-in-the-loop approval, plus stateful sessions in MongoDB/Redis and an observability layer tracking token usage, latency and outcomes."
+      },
+      {
+        "name": "Multimodal RAG for Manufacturing Docs (Final Year Project)",
+        "description": "A production-ready, fully on-premise multimodal RAG backend (FastAPI, Qdrant, MinIO, ColPali, Qwen2.5-VL) that answers questions across PDFs, images, tables and flowcharts. Uses HNSW indexing, metadata filtering and semantic reranking, improving retrieval from O(n) to ~O(log n)."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "I'm open to new opportunities and collaborations — let's get in touch.",
+    "email": "HANWEN0704@gmail.com",
+    "linkedinUrl": "https://www.linkedin.com/in/chuahwenhan/",
+    "githubUrl": "https://github.com/Chuah020704",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
