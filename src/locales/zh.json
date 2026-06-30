@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "about": "关于",
+    "experience": "经历",
+    "skills": "技能",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "hero": {
+    "eyebrow": "全栈 AI 与云端工程师",
+    "headlineBefore": "打造",
+    "headlineAccent": "智能",
+    "headlineAfter": "的系统，端到端。",
+    "subtitle": "我设计并交付智能体（Agentic）AI 系统、RAG 检索管线与云端后端——从数据摄取到部署。",
+    "ctaPrimary": "查看作品",
+    "ctaContact": "$ 联系我",
+    "status": "正在寻找机会 · 现居马来西亚槟城 · EN / 中文",
+    "photoAlt": "Chuah Wen Han 的头像"
+  },
+  "about": {
+    "title": "关于我",
+    "body": "我是蔡文翰（Chuah Wen Han），UCSI 大学计算机工程（人工智能）荣誉学士，最终 CGPA 3.90，每个符合资格的学期均获院长荣誉榜。目前在 Intel ECG AI & Cloud 远程解决方案工程团队担任 Graduate Talent，负责构建企业级智能体（Agentic）AI 系统、RAG 检索管线与云端后端。我从前端、后端、数据库到部署进行端到端开发，热衷于将复杂的工程问题转化为可靠的生产级 AI 服务。"
+  },
+  "experience": {
+    "title": "工作经历",
+    "jobs": [
+      {
+        "role": "Graduate Talent — ECG AI 与云端远程解决方案工程师",
+        "company": "Intel Microelectronics (M) Sdn. Bhd.",
+        "period": "2025年10月 — 至今",
+        "description": "全栈 AI 工程师，交付云端自动化与企业级 AI 服务。构建端到端 AI 管线（数据摄取、检索、模型集成与 API），并在 Azure 上部署与扩展服务，负责后端工程、SQL/NoSQL 数据库设计、系统集成与基于 Git 的 CI/CD。"
+      },
+      {
+        "role": "自动化开发工程（AI）实习生",
+        "company": "Western Digital (SanDisk Storage Malaysia)",
+        "period": "2024年9月 — 2024年12月",
+        "description": "使用 OpenCV、OCR 与深度学习开发 AI 图像转文字模型；设计并优化形状、线条与文字检测以自动化流程图分析，集成 LLM 实现 AI 驱动的查询响应，并使用 Docker 与 Flask 部署系统。"
+      },
+      {
+        "role": "软件（AI）工程师实习生",
+        "company": "Micro Modular System Sdn. Bhd.",
+        "period": "2023年9月 — 2023年12月",
+        "description": "使用 PyTorch 与 YOLOv8 框架构建深度学习机器视觉模型；实现实例分割以进行产品缺陷检测与尺寸测量，涵盖研究、模型架构设计、训练与性能评估。"
+      }
+    ]
+  },
+  "skills": {
+    "title": "技能",
+    "groups": [
+      { "name": "编程语言", "items": ["Python", "Java", "C++", "SQL", "HTML", "Assembly"] },
+      {
+        "name": "AI / 机器学习",
+        "items": ["PyTorch", "YOLOv8", "Computer Vision", "Deep Learning", "RAG", "LLM Orchestration"]
+      },
+      {
+        "name": "后端与云端",
+        "items": ["FastAPI", "Azure", "Docker", "PostgreSQL / pgvector", "MongoDB", "Redis", "MCP"]
+      },
+      { "name": "工具", "items": ["Git", "CI/CD", "MATLAB", "Arduino", "AutoCAD"] }
+    ]
+  },
+  "projects": {
+    "title": "项目",
+    "items": [
+      {
+        "name": "EzBot — 企业级多智能体知识平台",
+        "description": "解决企业知识分散、查询效率低的问题。采用 Hybrid RAG 结合 Semantic Search 与 Keyword Search 提升检索准确率，透过 MCP 整合企业内部工具与知识来源实现 Tool Calling，使用 FastAPI、PostgreSQL（pgvector）建立 AI 后端，提供自然语言查询，协助员工快速获取企业知识、提升工作效率。"
+      },
+      {
+        "name": "BSOD Copilot — AI Windows 内核调试助手",
+        "description": "AI 辅助 Windows Kernel 崩溃分析系统，降低内核调试学习门槛、减少人工分析时间。开发 MCP Server 将 WinDbg 封装为 LLM 可调用的 Tool，结合 Prompt Engineering 与 Tool Calling 自动分析 Memory Dump，协助定位 Root Cause 并提供调试建议，提升工程师的排错效率与分析速度。"
+      },
+      {
+        "name": "AgenticBot — 自主式验证与排障智能体",
+        "description": "基于 ReAct Agent 的自主式 AI Agent，应用于 Linux 验证与排障自动化。整合 SSH Tool Calling 可自主执行指令并分析结果，使用 Redis 与 MongoDB 管理 Session Memory 与执行纪录，结合 Human-in-the-Loop 确保高风险操作的安全性，减少重复性验证工作。"
+      },
+      {
+        "name": "制造文档多模态 RAG 系统（毕业设计）",
+        "description": "生产级、完全本地（on-premise）部署的端到端多模态 RAG 后端（FastAPI、Qdrant、MinIO、ColPali、Qwen2.5-VL），可处理 PDF、图像、表格与流程图，实现跨模态问答。采用 HNSW 索引、元数据过滤与语义重排，将检索效率从 O(n) 提升至约 O(log n)。"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系我",
+    "intro": "我乐于接受新的机会与合作，欢迎与我联系。",
+    "email": "HANWEN0704@gmail.com",
+    "linkedinUrl": "https://www.linkedin.com/in/chuahwenhan/",
+    "githubUrl": "https://github.com/Chuah020704",
+    "emailLabel": "邮箱",
+    "linkedinLabel": "领英",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "rights": "版权所有。"
+  }
+}
