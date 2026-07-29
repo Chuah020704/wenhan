@@ -10,7 +10,9 @@ test('renders eyebrow, accent headline, photo, and CTAs in English', () => {
   renderWithProviders(<Hero />);
   expect(screen.getByText('// full-stack AI & cloud engineer')).toBeInTheDocument();
   expect(screen.getByText('intelligent')).toBeInTheDocument();
-  expect(screen.getByAltText('Portrait of Chuah Wen Han')).toBeInTheDocument();
+  const photo = screen.getByAltText('Portrait of Chuah Wen Han');
+  expect(photo).toBeInTheDocument();
+  expect(photo.getAttribute('src')).toContain('Jit%20Sin_face.jpg');
   expect(screen.getByRole('link', { name: 'View my work' })).toHaveAttribute('href', '#projects');
 });
 

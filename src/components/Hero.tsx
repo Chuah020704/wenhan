@@ -42,7 +42,7 @@ export default function Hero() {
           style={{ position: 'relative', flexShrink: 0 }}
         >
           <img
-            src={`${import.meta.env.BASE_URL}profile.jpg`}
+            src={`${import.meta.env.BASE_URL}Jit%20Sin_face.jpg`}
             alt={t('hero.photoAlt')}
             style={{
               width: 156,
