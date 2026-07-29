@@ -31,7 +31,7 @@ export default function Nav() {
           position: 'relative',
         }}
       >
-        <a href="#hero" style={{ fontWeight: 800, color: 'var(--text)', textDecoration: 'none' }}>
+        <a href="#hero" className="nav-brand" style={{ fontWeight: 800, color: 'var(--text)', textDecoration: 'none' }}>
           WEN&nbsp;HAN<span style={{ color: 'var(--accent-from)' }}>.</span>
         </a>
         <div className="nav-right">
@@ -40,7 +40,7 @@ export default function Nav() {
               <a
                 key={key}
                 href={`#${key}`}
-                className="mono"
+                className="mono nav-link"
                 onClick={() => setOpen(false)}
                 style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: 13 }}
               >

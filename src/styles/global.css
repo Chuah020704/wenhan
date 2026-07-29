@@ -79,6 +79,101 @@ body {
   }
 }
 
+/* ── Profile photo glow ring ── */
+.profile-ring {
+  position: relative;
+}
+.profile-ring::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to), var(--accent-from));
+  background-size: 200% 200%;
+  animation: ring-spin 4s linear infinite;
+  z-index: 0;
+}
+.profile-ring::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  opacity: 0.2;
+  filter: blur(12px);
+  z-index: 0;
+  animation: ring-spin 6s linear infinite reverse;
+}
+.profile-ring img {
+  position: relative;
+  z-index: 1;
+}
+@keyframes ring-spin {
+  to {
+    background-position: 200% 200%;
+  }
+}
+
+/* ── CTA buttons ── */
+.cta-primary {
+  position: relative;
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  background-size: 200% auto;
+  transition: background-position 0.4s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 0 0 var(--accent-from);
+}
+.cta-primary:hover {
+  background-position: right center;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.45);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+.cta-secondary {
+  position: relative;
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.cta-secondary:hover {
+  border-color: var(--accent-from);
+  box-shadow: 0 0 14px rgba(99, 102, 241, 0.2);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+/* ── Nav animated underline ── */
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, var(--accent-from), var(--accent-to));
+  border-radius: 2px;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
 a:hover {
   opacity: 0.8;
 }
@@ -122,6 +217,14 @@ a:hover {
   .nav-links.open {
     display: flex;
   }
+  /* On mobile, hide profile ring pseudo-elements for performance */
+  .profile-ring::before,
+  .profile-ring::after {
+    display: none;
+  }
+  .profile-ring img {
+    border: 3px solid var(--accent-from) !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -131,5 +234,9 @@ a:hover {
   * {
     animation: none !important;
     transition: none !important;
+  }
+  .profile-ring::before,
+  .profile-ring::after {
+    animation: none !important;
   }
 }
