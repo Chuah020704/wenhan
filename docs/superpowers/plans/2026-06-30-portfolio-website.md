@@ -34,7 +34,7 @@ wenhan/
 ├── .eslintrc.cjs / .prettierrc / .gitignore
 ├── .github/workflows/deploy.yml     # build + deploy to Pages
 ├── public/                          # static assets served as-is
-│   └── profile.jpg                  # placeholder profile photo (owner replaces)
+│   └── Jit Sin_face.jpg                  # placeholder profile photo (owner replaces)
 └── src/
     ├── main.tsx                     # React root, imports i18n + global css
     ├── App.tsx                      # assembles sections inside providers
@@ -1137,7 +1137,7 @@ git commit -m "feat: add sticky nav with section links, toggles, and mobile menu
 ### Task 7: Hero section
 
 **Files:**
-- Create: `src/components/Hero.tsx`, `public/profile.jpg` (placeholder image)
+- Create: `src/components/Hero.tsx`, `public/Jit Sin_face.jpg` (placeholder image)
 - Test: `src/components/Hero.test.tsx`
 
 **Interfaces:**
@@ -1148,9 +1148,9 @@ git commit -m "feat: add sticky nav with section links, toggles, and mobile menu
 
 Run (from repo root):
 ```bash
-node -e "const fs=require('fs');const b64='/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////2wBDAf//////////////////////////////////////////////////////////////////////////////////////wAARCAABAAEDASIAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAAv/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwD/2Q==';fs.writeFileSync('public/profile.jpg',Buffer.from(b64,'base64'));console.log('wrote placeholder');"
+node -e "const fs=require('fs');const b64='/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAP//////////////////////////////////////////////////////////////////////////////////////2wBDAf//////////////////////////////////////////////////////////////////////////////////////wAARCAABAAEDASIAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAAv/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwD/2Q==';fs.writeFileSync('public/Jit Sin_face.jpg',Buffer.from(b64,'base64'));console.log('wrote placeholder');"
 ```
-Expected: prints `wrote placeholder`; creates `public/profile.jpg`. (Owner replaces with a real photo later.)
+Expected: prints `wrote placeholder`; creates `public/Jit Sin_face.jpg`. (Owner replaces with a real photo later.)
 
 - [ ] **Step 2: Write the failing test**
 
@@ -1206,7 +1206,7 @@ export default function Hero() {
       }}
     >
       <img
-        src={`${import.meta.env.BASE_URL}profile.jpg`}
+        src={`${import.meta.env.BASE_URL}Jit%20Sin_face.jpg`}
         alt={t('hero.photoAlt')}
         style={{ width: 140, height: 140, borderRadius: '50%', objectFit: 'cover', border: '1px solid var(--border)' }}
       />
@@ -1927,7 +1927,7 @@ npm run build    # production build
 
 All text lives in `src/locales/en.json` and `src/locales/zh.json` with matching
 keys. Edit those files to update your bio, experience, skills, projects, and
-contact details. Replace `public/profile.jpg` with your photo.
+contact details. Replace `public/Jit Sin_face.jpg` with your photo.
 
 ## Deploy
 
@@ -1960,6 +1960,6 @@ In the GitHub repo: **Settings → Pages → Build and deployment → Source: Gi
 These need real content from the owner (placeholders are in place and the site works without them):
 - Edit `src/locales/en.json` with real bio, experience, skills, projects, contact email, LinkedIn URL.
 - Review and correct `src/locales/zh.json` (drafted Mandarin).
-- Replace `public/profile.jpg` with a real headshot.
+- Replace `public/Jit Sin_face.jpg` with a real headshot.
 - Update `YOUR NAME` in `Nav.tsx`, `Hero` (via `photoAlt`), and `Footer.tsx`.
 - Run a Lighthouse pass and address any accessibility/performance findings.

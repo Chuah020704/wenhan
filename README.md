@@ -26,7 +26,7 @@ npm run lint     # lint
 
 All text lives in `src/locales/en.json` and `src/locales/zh.json` with matching
 keys. Edit those files to update your bio, experience, skills, projects and
-contact details. Replace `public/profile.jpg` with your own photo.
+contact details. Replace `public/Jit Sin_face.jpg` with your own photo.
 
 ## Deploy
 
