@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageToggle from './LanguageToggle';
 import ThemeToggle from './ThemeToggle';
 
-const LINKS = ['about', 'experience', 'skills', 'projects', 'contact'] as const;
+const LINKS = ['about', 'expertise', 'experience', 'skills', 'projects', 'contact'] as const;
 
 export default function Nav() {
   const { t } = useTranslation();
@@ -31,7 +31,11 @@ export default function Nav() {
           position: 'relative',
         }}
       >
-        <a href="#hero" className="nav-brand" style={{ fontWeight: 800, color: 'var(--text)', textDecoration: 'none' }}>
+        <a
+          href="#hero"
+          className="nav-brand"
+          style={{ fontWeight: 800, color: 'var(--text)', textDecoration: 'none' }}
+        >
           WEN&nbsp;HAN<span style={{ color: 'var(--accent-from)' }}>.</span>
         </a>
         <div className="nav-right">
@@ -50,6 +54,9 @@ export default function Nav() {
           </div>
           <LanguageToggle />
           <ThemeToggle />
+          <a href="#about" className="nav-avatar" title={t('hero.photoAlt')}>
+            <img src={`${import.meta.env.BASE_URL}Jit%20Sin_face.jpg`} alt={t('hero.photoAlt')} />
+          </a>
           <button
             type="button"
             className="nav-toggle"

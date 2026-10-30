@@ -17,24 +17,24 @@ beforeEach(() => {
   document.documentElement.removeAttribute('data-theme');
 });
 
-test('defaults to light and sets data-theme', () => {
+test('defaults to dark (deep-space) and sets data-theme', () => {
   render(
     <ThemeProvider>
       <Probe />
     </ThemeProvider>,
   );
-  expect(screen.getByTestId('theme')).toHaveTextContent('light');
-  expect(document.documentElement.getAttribute('data-theme')).toBe('light');
+  expect(screen.getByTestId('theme')).toHaveTextContent('dark');
+  expect(document.documentElement.getAttribute('data-theme')).toBe('dark');
 });
 
-test('toggles to dark and persists', async () => {
+test('toggles to light and persists', async () => {
   render(
     <ThemeProvider>
       <Probe />
     </ThemeProvider>,
   );
   await userEvent.click(screen.getByText('toggle'));
-  expect(screen.getByTestId('theme')).toHaveTextContent('dark');
-  expect(document.documentElement.getAttribute('data-theme')).toBe('dark');
-  expect(localStorage.getItem('theme')).toBe('dark');
+  expect(screen.getByTestId('theme')).toHaveTextContent('light');
+  expect(document.documentElement.getAttribute('data-theme')).toBe('light');
+  expect(localStorage.getItem('theme')).toBe('light');
 });

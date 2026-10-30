@@ -9,5 +9,7 @@ beforeEach(async () => {
 test('renders the about title and bio', () => {
   renderWithProviders(<About />);
   expect(screen.getByRole('heading', { name: /About/i })).toBeInTheDocument();
-  expect(screen.getByText(/Computer Engineering \(Artificial Intelligence\) graduate/i)).toBeInTheDocument();
+  expect(
+    screen.getByText(/Computer Engineering \(Artificial Intelligence\) graduate/i),
+  ).toBeInTheDocument();
 });

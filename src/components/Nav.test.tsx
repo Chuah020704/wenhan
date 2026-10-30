@@ -15,6 +15,13 @@ test('renders section anchor links and both toggles', () => {
   expect(screen.getByRole('button', { name: /switch theme/i })).toBeInTheDocument();
 });
 
+test('shows the profile avatar at the top right', () => {
+  renderWithProviders(<Nav />);
+  const avatar = screen.getByAltText('Portrait of Chuah Wen Han');
+  expect(avatar.getAttribute('src')).toContain('Jit%20Sin_face.jpg');
+  expect(avatar.closest('a')).toHaveClass('nav-avatar');
+});
+
 test('hamburger button toggles aria-expanded', async () => {
   renderWithProviders(<Nav />);
   const btn = screen.getByRole('button', { name: /toggle menu/i });

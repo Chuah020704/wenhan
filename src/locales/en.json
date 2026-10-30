@@ -4,22 +4,43 @@
     "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "expertise": "Expertise"
   },
   "hero": {
-    "eyebrow": "full-stack AI & cloud engineer",
-    "headlineBefore": "Building ",
-    "headlineAccent": "intelligent",
-    "headlineAfter": " systems, end to end.",
-    "subtitle": "I design and ship agentic AI systems, RAG pipelines and cloud-integrated backends — from data ingestion to deployment.",
-    "ctaPrimary": "View my work",
-    "ctaContact": "$ contact",
-    "status": "Available for opportunities · Based in Penang, Malaysia · EN / 中文",
-    "photoAlt": "Portrait of Chuah Wen Han"
+    "eyebrow": "AI engineer · LLM systems · cloud infra",
+    "headlineBefore": "I build ",
+    "headlineAccent": "production-grade AI",
+    "headlineAfter": " — from LLM to infrastructure.",
+    "subtitle": "Agentic RAG platforms, MCP tool servers, multimodal retrieval and the cloud backends that keep them running. Deep in the AI stack, not the pixel stack.",
+    "ctaPrimary": "Explore my systems",
+    "ctaContact": "$ contact --me",
+    "status": "Open to AI / LLM engineering roles · Penang, Malaysia · EN / 中文",
+    "photoAlt": "Portrait of Chuah Wen Han",
+    "loading": "booting 3D keyboard…",
+    "keyboardHint": "hover or press a key — every keycap is a skill",
+    "stats": [
+      {
+        "value": "4+",
+        "label": "AI systems shipped"
+      },
+      {
+        "value": "19+",
+        "label": "LLM debug playbooks"
+      },
+      {
+        "value": "3.90",
+        "label": "CGPA · Dean's List"
+      },
+      {
+        "value": "O(log n)",
+        "label": "retrieval, from O(n)"
+      }
+    ]
   },
   "about": {
     "title": "About",
-    "body": "I'm Chuah Wen Han, a Computer Engineering (Artificial Intelligence) graduate from UCSI University with a final CGPA of 3.90 and Dean's List recognition in every eligible semester. I'm currently a Graduate Talent on Intel's ECG AI & Cloud Remote Solutions Engineering team, where I build enterprise-scale agentic AI systems, RAG pipelines and cloud-integrated backends. I work end to end — frontend, backend, databases and deployment — and enjoy turning complex engineering problems into reliable, production-grade AI services."
+    "body": "I'm Chuah Wen Han, a Computer Engineering (Artificial Intelligence) graduate from UCSI University (CGPA 3.90, Dean's List every eligible semester) and currently a Graduate Talent on Intel's ECG AI & Cloud Remote Solutions Engineering team. My core strength is the AI layer and the infrastructure underneath it: designing agentic LLM systems, building retrieval pipelines on vector databases, exposing expert tooling to models through MCP, and deploying and scaling all of it on Azure with proper auth, observability and CI/CD. Frontend is a means to an end for me — the depth is in making AI systems reliable, secure and fast in production."
   },
   "experience": {
     "title": "Experience",
@@ -28,57 +49,112 @@
         "role": "Graduate Talent — ECG AI & Cloud Remote Solution Engineer",
         "company": "Intel Microelectronics (M) Sdn. Bhd.",
         "period": "Oct 2025 — Present",
-        "description": "Full-stack AI engineer delivering cloud-based automation and enterprise AI services. Built end-to-end AI pipelines (data ingestion, retrieval, model integration and APIs) and deployed and scaled services on Azure, handling backend engineering, SQL/NoSQL database design, system integration and Git-based CI/CD."
+        "description": "Full-stack AI engineer delivering cloud-based automation and enterprise AI services. Built end-to-end AI pipelines (data ingestion, retrieval, model integration and APIs) and deployed and scaled services on Azure, handling backend engineering, SQL/NoSQL database design, system integration and Git-based CI/CD.",
+        "highlights": [
+          "Architected an enterprise Agentic RAG platform routing requests across domain-specific AI agents.",
+          "Built an MCP server exposing WinDbg kernel debugging as LLM tools, encoding 19+ bugcheck playbooks.",
+          "Delivered a ReAct autonomous agent with SSH execution, safety validation and human-in-the-loop approval."
+        ]
       },
       {
         "role": "Automation Development Engineering (AI) Intern",
         "company": "Western Digital (SanDisk Storage Malaysia)",
         "period": "Sep 2024 — Dec 2024",
-        "description": "Developed an AI-powered image-to-text model using OpenCV, OCR and deep learning. Designed and optimized shape, line and text detection to automate flowchart analysis, integrated it with an LLM for AI-driven query responses, and deployed the system with Docker and Flask."
+        "description": "Developed an AI-powered image-to-text model using OpenCV, OCR and deep learning. Designed and optimized shape, line and text detection to automate flowchart analysis, integrated it with an LLM for AI-driven query responses, and deployed the system with Docker and Flask.",
+        "highlights": [
+          "Image-to-text pipeline combining OpenCV, OCR and deep learning for automated flowchart analysis.",
+          "Integrated with an LLM for AI-driven query responses; shipped with Docker + Flask."
+        ]
       },
       {
         "role": "Software (AI) Engineer Intern",
         "company": "Micro Modular System Sdn. Bhd.",
         "period": "Sep 2023 — Dec 2023",
-        "description": "Built deep-learning models for machine-vision systems using PyTorch and YOLOv8. Implemented instance segmentation for product defect inspection and size measurement, covering research, model architecture design, training and performance evaluation."
+        "description": "Built deep-learning models for machine-vision systems using PyTorch and YOLOv8. Implemented instance segmentation for product defect inspection and size measurement, covering research, model architecture design, training and performance evaluation.",
+        "highlights": [
+          "YOLOv8 instance segmentation for product defect inspection and size measurement.",
+          "Owned research, architecture design, training and evaluation end to end."
+        ]
       }
     ]
   },
   "skills": {
     "title": "Skills",
     "groups": [
-      { "name": "Languages", "items": ["Python", "Java", "C++", "SQL", "HTML", "Assembly"] },
+      {
+        "name": "Languages",
+        "items": ["Python", "Java", "C++", "SQL", "HTML", "Assembly"]
+      },
       {
         "name": "AI / ML",
-        "items": ["PyTorch", "YOLOv8", "Computer Vision", "Deep Learning", "RAG", "LLM Orchestration"]
+        "items": [
+          "PyTorch",
+          "YOLOv8",
+          "Computer Vision",
+          "Deep Learning",
+          "RAG",
+          "LLM Orchestration"
+        ]
       },
       {
         "name": "Backend & Cloud",
         "items": ["FastAPI", "Azure", "Docker", "PostgreSQL / pgvector", "MongoDB", "Redis", "MCP"]
       },
-      { "name": "Tools", "items": ["Git", "CI/CD", "MATLAB", "Arduino", "AutoCAD"] }
-    ]
+      {
+        "name": "Tools",
+        "items": ["Git", "CI/CD", "MATLAB", "Arduino", "AutoCAD"]
+      }
+    ],
+    "lead": "The keyboard in the hero is the interactive version — here is the flat list."
   },
   "projects": {
     "title": "Projects",
     "items": [
       {
         "name": "EzBot — Enterprise Multi-Agent Knowledge Platform",
-        "description": "An enterprise-scale Agentic RAG platform that routes requests to domain-specific AI agents (workspace, general Q&A, and debug analysis such as BSOD and IFWI). Built with FastAPI and PostgreSQL + pgvector for hybrid vector search over FAQ APIs, Confluence and SharePoint, with an Azure-hosted Claude LLM using tool-calling, orchestrator-based routing, and JWT/OAuth2-secured endpoints."
+        "description": "An enterprise-scale Agentic RAG platform that routes requests to domain-specific AI agents (workspace, general Q&A, and debug analysis such as BSOD and IFWI). Built with FastAPI and PostgreSQL + pgvector for hybrid vector search over FAQ APIs, Confluence and SharePoint, with an Azure-hosted Claude LLM using tool-calling, orchestrator-based routing, and JWT/OAuth2-secured endpoints.",
+        "context": "Intel · production",
+        "tagline": "Orchestrator-routed multi-agent RAG over FAQ APIs, Confluence and SharePoint.",
+        "tags": [
+          "FastAPI",
+          "PostgreSQL + pgvector",
+          "Hybrid search",
+          "Claude on Azure",
+          "Tool calling",
+          "JWT / OAuth2"
+        ]
       },
       {
         "name": "BSOD Copilot — AI Windows Crash Dump Analyzer",
-        "description": "An MCP server (FastMCP + FastAPI) that wraps WinDbg/kd.exe as LLM-callable tools to automatically analyze Windows memory dumps. Encodes a kernel-debugging expert's knowledge into 19+ bugcheck-specific guides (0xA, 0x50, 0x133, 0x1CA…) covering root-cause patterns, IOMMU/DMA corruption, power-state failures and hardware faults."
+        "description": "An MCP server (FastMCP + FastAPI) that wraps WinDbg/kd.exe as LLM-callable tools to automatically analyze Windows memory dumps. Encodes a kernel-debugging expert's knowledge into 19+ bugcheck-specific guides (0xA, 0x50, 0x133, 0x1CA…) covering root-cause patterns, IOMMU/DMA corruption, power-state failures and hardware faults.",
+        "context": "Intel · MCP server",
+        "tagline": "WinDbg as LLM-callable tools, with a kernel expert's knowledge encoded as guides.",
+        "tags": ["FastMCP", "FastAPI", "WinDbg / kd.exe", "19+ bugcheck guides", "Kernel debugging"]
       },
       {
         "name": "AgenticBot — Autonomous Validation Assistant",
-        "description": "A ReAct-style autonomous agent that operates Linux validation environments via natural language. Features secure SSH command execution with intent classification, safety validation and human-in-the-loop approval, plus stateful sessions in MongoDB/Redis and an observability layer tracking token usage, latency and outcomes."
+        "description": "A ReAct-style autonomous agent that operates Linux validation environments via natural language. Features secure SSH command execution with intent classification, safety validation and human-in-the-loop approval, plus stateful sessions in MongoDB/Redis and an observability layer tracking token usage, latency and outcomes.",
+        "context": "Intel · autonomous agent",
+        "tagline": "ReAct agent that drives Linux validation environments from natural language.",
+        "tags": [
+          "ReAct",
+          "SSH automation",
+          "Intent classification",
+          "Human-in-the-loop",
+          "MongoDB",
+          "Redis",
+          "Observability"
+        ]
       },
       {
         "name": "Multimodal RAG for Manufacturing Docs (Final Year Project)",
-        "description": "A production-ready, fully on-premise multimodal RAG backend (FastAPI, Qdrant, MinIO, ColPali, Qwen2.5-VL) that answers questions across PDFs, images, tables and flowcharts. Uses HNSW indexing, metadata filtering and semantic reranking, improving retrieval from O(n) to ~O(log n)."
+        "description": "A production-ready, fully on-premise multimodal RAG backend (FastAPI, Qdrant, MinIO, ColPali, Qwen2.5-VL) that answers questions across PDFs, images, tables and flowcharts. Uses HNSW indexing, metadata filtering and semantic reranking, improving retrieval from O(n) to ~O(log n).",
+        "context": "Final year project · on-premise",
+        "tagline": "Multimodal RAG across PDFs, images, tables and flowcharts — fully offline.",
+        "tags": ["FastAPI", "Qdrant", "MinIO", "ColPali", "Qwen2.5-VL", "HNSW", "Reranking"]
       }
-    ]
+    ],
+    "lead": "Built inside Intel and at university; the first three are internal/proprietary so there are no public links — ask me about them."
   },
   "contact": {
     "title": "Contact",
@@ -92,5 +168,47 @@
   },
   "footer": {
     "rights": "All rights reserved."
+  },
+  "expertise": {
+    "title": "What I'm strong at",
+    "lead": "Not a generalist who dabbles in AI — an AI engineer who owns the whole stack from model behaviour to deployment.",
+    "areas": [
+      {
+        "icon": "🧠",
+        "title": "Agentic LLM systems",
+        "description": "Orchestrator-based multi-agent routing, ReAct-style autonomous agents, tool calling, intent classification and human-in-the-loop safety gates.",
+        "tags": ["Claude on Azure", "ReAct", "Tool calling", "Orchestration"]
+      },
+      {
+        "icon": "🔎",
+        "title": "RAG & retrieval infrastructure",
+        "description": "Hybrid vector + keyword search, HNSW indexing, metadata filtering and semantic reranking over PDFs, Confluence, SharePoint, images and flowcharts.",
+        "tags": ["pgvector", "Qdrant", "ColPali", "Reranking"]
+      },
+      {
+        "icon": "🧩",
+        "title": "MCP & LLM tooling",
+        "description": "Wrapping real expert tools (WinDbg, SSH, validation rigs) as LLM-callable MCP servers, and encoding domain knowledge into model-readable guides.",
+        "tags": ["FastMCP", "WinDbg", "SSH automation", "Safety validation"]
+      },
+      {
+        "icon": "☁️",
+        "title": "Cloud, backend & MLOps",
+        "description": "FastAPI services, JWT/OAuth2 security, SQL/NoSQL design, Docker, Azure deployment and Git-based CI/CD with token, latency and outcome observability.",
+        "tags": ["Azure", "Docker", "FastAPI", "CI/CD", "Observability"]
+      },
+      {
+        "icon": "👁️",
+        "title": "Computer vision & multimodal AI",
+        "description": "YOLOv8 instance segmentation for defect inspection, OCR + deep-learning flowchart understanding, and vision-language models for document QA.",
+        "tags": ["PyTorch", "YOLOv8", "OCR", "Qwen2.5-VL"]
+      },
+      {
+        "icon": "⚙️",
+        "title": "Low-level & systems",
+        "description": "Kernel-debugging expertise distilled into bugcheck guides, Linux environment automation and an engineering degree foundation in C++ and Assembly.",
+        "tags": ["Kernel debugging", "Linux", "C++", "Assembly"]
+      }
+    ]
   }
 }

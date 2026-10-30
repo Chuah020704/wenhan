@@ -5,7 +5,10 @@ import TiltCard from './TiltCard';
 
 interface Project {
   name: string;
+  tagline?: string;
   description: string;
+  tags?: string[];
+  context?: string;
 }
 
 const cardVariants = {
@@ -14,7 +17,7 @@ const cardVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.45, delay: i * 0.1, ease: 'easeOut' },
+    transition: { duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] },
   }),
 };
 
@@ -23,45 +26,34 @@ export default function Projects() {
   const items = t('projects.items', { returnObjects: true }) as Project[];
   return (
     <SectionReveal id="projects">
-      <p className="mono" style={{ color: 'var(--accent-from)', fontSize: 13 }}>
-        // projects
-      </p>
-      <h2 style={{ fontSize: 28, fontWeight: 800, margin: '8px 0 24px' }}>{t('projects.title')}</h2>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-          gap: 16,
-        }}
-      >
+      <p className="mono section-eyebrow">// projects</p>
+      <h2 className="section-title">{t('projects.title')}</h2>
+      <p className="section-lead">{t('projects.lead')}</p>
+      <div className="projects-grid">
         {items.map((p, i) => (
-          <motion.div key={i} custom={i} variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }}>
-            <TiltCard
-              style={{
-                border: '1px solid var(--border)',
-                borderRadius: 10,
-                padding: 20,
-                background: 'var(--card-bg)',
-                height: '100%',
-              }}
-            >
-              <div style={{ position: 'relative', transformStyle: 'preserve-3d' }}>
-                <div
-                  aria-hidden="true"
-                  style={{
-                    position: 'absolute',
-                    inset: -1,
-                    borderRadius: 10,
-                    background: 'linear-gradient(135deg, var(--accent-from), var(--accent-to))',
-                    opacity: 0,
-                    transition: 'opacity 0.3s ease',
-                    pointerEvents: 'none',
-                  }}
-                  className="card-glow-layer"
-                />
-                <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 8 }}>{p.name}</h3>
-                <p style={{ color: 'var(--muted)', fontSize: 14 }}>{p.description}</p>
-              </div>
+          <motion.div
+            key={p.name}
+            custom={i}
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            <TiltCard className="glass-card project-card">
+              <div className="project-index mono">0{i + 1}</div>
+              {p.context && <span className="project-context mono">{p.context}</span>}
+              <h3>{p.name}</h3>
+              {p.tagline && <p className="project-tagline">{p.tagline}</p>}
+              <p className="project-desc">{p.description}</p>
+              {p.tags && (
+                <div className="tag-row">
+                  {p.tags.map((tag) => (
+                    <span key={tag} className="tag mono">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </TiltCard>
           </motion.div>
         ))}

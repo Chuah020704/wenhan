@@ -30,14 +30,14 @@ export default function Skills() {
   const groups = t('skills.groups', { returnObjects: true }) as Group[];
   return (
     <SectionReveal id="skills">
-      <p className="mono" style={{ color: 'var(--accent-from)', fontSize: 13 }}>
-        // skills
-      </p>
-      <h2 style={{ fontSize: 28, fontWeight: 800, margin: '8px 0 24px' }}>{t('skills.title')}</h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      <p className="mono section-eyebrow">// skills</p>
+      <h2 className="section-title">{t('skills.title')}</h2>
+      <p className="section-lead">{t('skills.lead')}</p>
+      <div className="skills-groups">
         {groups.map((group, gi) => (
           <motion.div
             key={gi}
+            className="glass-card skills-group"
             custom={gi}
             variants={groupVariants}
             initial="hidden"
@@ -56,17 +56,8 @@ export default function Skills() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.1 }}
-                  whileHover={{ scale: 1.08, borderColor: 'var(--accent-from)' }}
-                  style={{
-                    border: '1px solid var(--border)',
-                    borderRadius: 6,
-                    padding: '6px 12px',
-                    fontSize: 13,
-                    background: 'var(--card-bg)',
-                    cursor: 'default',
-                    display: 'inline-block',
-                    transition: 'border-color 0.2s',
-                  }}
+                  whileHover={{ scale: 1.08, y: -2 }}
+                  className="tag skill-tag mono"
                 >
                   {item}
                 </motion.span>
