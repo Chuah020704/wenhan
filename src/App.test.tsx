@@ -13,6 +13,7 @@ test('renders all sections in English', () => {
   render(<App />);
   expect(document.getElementById('hero')).not.toBeNull();
   expect(document.getElementById('about')).not.toBeNull();
+  expect(document.getElementById('expertise')).not.toBeNull();
   expect(document.getElementById('experience')).not.toBeNull();
   expect(document.getElementById('skills')).not.toBeNull();
   expect(document.getElementById('projects')).not.toBeNull();
